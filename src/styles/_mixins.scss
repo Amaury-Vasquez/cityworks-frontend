@@ -1,0 +1,40 @@
+@import './animations';
+$background: rgba(255, 255, 255, 0.2);
+
+@mixin shadow {
+  box-shadow: rgba(256, 256, 256, 0.1) 0px 4px 12px;
+}
+
+@mixin contentWidth {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button($big: false) {
+  @include centering;
+  border-radius: 100px;
+  background: var(--primary);
+  color: var(--font-dark);
+  width: fit-content;
+  height: fit-content;
+  outline: none;
+  font-weight: 500;
+  @if $big {
+    font-size: 1.8rem;
+    padding: 16px 24px;
+  } @else {
+    padding: 8px 20px;
+  }
+}
+
+@mixin page {
+  @include contentWidth;
+  @include fadeIn;
+}

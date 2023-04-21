@@ -1,0 +1,10 @@
+@import '../animations';
+
+.mainLayout {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  gap: 40px;
+}
