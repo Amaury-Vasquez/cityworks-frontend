@@ -4,7 +4,7 @@ import styles from '@/styles/layout/layout.module.scss';
 
 export const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
   return (
-    <div className={styles.layout}>
+    <div className={styles.mainLayout}>
       <Header />
       {children}
     </div>

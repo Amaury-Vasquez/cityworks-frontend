@@ -1,0 +1,27 @@
+@import '../mixins';
+
+button.button {
+  width: fit-content;
+  height: fit-content;
+  padding: 12px 18px;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.2s ease-in;
+  @include shadow();
+
+  &:hover,
+  &:focus-visible {
+    transform: scale(1.1);
+    outline: none;
+  }
+}
+
+button.primary {
+  background: var(--dark);
+  color: var(--primary);
+
+  &:focus-visible {
+    border: 1px solid var(--primary);
+  }
+}

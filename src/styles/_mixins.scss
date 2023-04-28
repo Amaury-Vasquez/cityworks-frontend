@@ -27,10 +27,15 @@ $background: rgba(255, 255, 255, 0.2);
   outline: none;
   font-weight: 500;
   @if $big {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding: 16px 24px;
   } @else {
     padding: 8px 20px;
+  }
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background: var(--secondary);
   }
 }
 

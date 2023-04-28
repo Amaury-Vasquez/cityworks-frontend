@@ -27,3 +27,29 @@
 @mixin fadeOut($time: 0.5s) {
   animation: $time fadeOutKeyframes ease;
 }
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@mixin slideRight($time: 0.5s) {
+  animation: $time slideRight ease;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@mixin slideLeft($time: 0.5s) {
+  animation: $time slideLeft ease;
+}

@@ -14,7 +14,7 @@ export const Header: FC = () => {
         <Link to="/about" className={navLink}>
           ¿Qué es CityWorks?
         </Link>
-        <Link to="/login" className={loginButton}>
+        <Link to="/auth" className={loginButton}>
           Iniciar sesión
         </Link>
       </nav>

@@ -6,7 +6,7 @@ import styles from '@/styles/pages/home.module.scss';
 const { homeContent, homeTitle, homeText, homeArticle, homeButton, homeImage } =
   styles;
 
-export const Home: FC = () => {
+const Home: FC = () => {
   return (
     <>
       <Helmet>
@@ -17,21 +17,25 @@ export const Home: FC = () => {
         <article className={homeArticle}>
           <h1 className={homeTitle}>¡Bienvenido nuevamente!</h1>
           <p className={homeText}>
-            Inicia sesión dando click en el siguiente botón para empezar a
-            disfrutar nuestros servicios.
+            CityWorks es un servicio que se encarga de la administración y
+            gestión de obras públicas en la república Mexicana.
           </p>
           <a className={homeButton} href="/login">
-            Iniciar sesión
+            Inicia sesión
           </a>
         </article>
         <div className={homeImage}>
           <Image
             src="https://i.imgur.com/9PKFEAU.jpg"
             alt="Parque los Venados"
-            caption='Foto de "Parque los Venados" por "Jorge L". Obra pública en CDMX'
+            caption="Parque los Venados. Obra pública en CDMX"
+            shadow
+            padding
           />
         </div>
       </main>
     </>
   );
 };
+
+export default Home;
