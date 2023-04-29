@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Button, Image } from '@/components';
 import styles from '@/styles/pages/home.module.scss';
 
@@ -11,7 +11,10 @@ const Home: FC = () => {
     <>
       <Helmet>
         <title>CityWorks - Bienvenido nuevamente</title>
-        <meta name="description" content="CityWorks homepage" />
+        <meta
+          name="description"
+          content="CityWorks, un servicio para la administración de obras públicas"
+        />
       </Helmet>
       <main className={homeContent}>
         <article className={homeArticle}>

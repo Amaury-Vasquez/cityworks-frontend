@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { FallbackScreen } from './Layout/FallbackScreen';
 import { MainLayout } from '@/Layout';
 
 const Home = lazy(() => import('./pages/Home'));
@@ -11,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <MainLayout>
-        <Suspense fallback={<h1>fallback</h1>}>
+        <Suspense fallback={<FallbackScreen />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

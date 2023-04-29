@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Carousel } from '@/components';
 import { ImageType } from '@/interfaces';
 import styles from '@/styles/pages/about.module.scss';
@@ -30,6 +30,12 @@ const About: FC = () => {
     <>
       <Helmet>
         <title> CityWorks - ¿Quienes somos? </title>
+        <meta
+          name="description"
+          content="CityWorks, herramienta tecnológica que permite a las
+            autoridades encargadas de la construcción y mantenimiento de
+            infraestructuras públicas"
+        />
       </Helmet>
       <main className={aboutContent}>
         <Carousel images={carouselImages} />

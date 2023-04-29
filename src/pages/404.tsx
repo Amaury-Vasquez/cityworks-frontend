@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components';
 import styles from '@/styles/pages/404.module.scss';
@@ -10,6 +10,7 @@ const NotFound: FC = () => (
   <>
     <Helmet>
       <title>CityWorks - Página no encontrada</title>
+      <meta name="description" content="CityWorks, página no existente" />
     </Helmet>
     <main className={notFoundLayout}>
       <h1 className={notFoundText}>404</h1>

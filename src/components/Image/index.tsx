@@ -28,6 +28,6 @@ export const Image: FC<ImageProps> = ({
     )}
   >
     <img src={src} alt={alt} {...props} />
-    {caption && <caption>{caption}</caption>}
+    {caption && <figcaption>{caption}</figcaption>}
   </div>
 );
