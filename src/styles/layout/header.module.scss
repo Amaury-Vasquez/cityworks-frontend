@@ -18,6 +18,7 @@ header.header {
   color: var(--primary);
   font-weight: 600;
   transition: color 0.2s ease-in-out;
+  @include outline;
 
   &:hover {
     color: var(--secondary);
@@ -27,6 +28,8 @@ header.header {
 a.homeLink {
   @include link;
   font-size: 1.8rem;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 nav.nav {
@@ -38,8 +41,7 @@ nav.nav {
 a.navLink {
   @include link;
   font-size: 1.2rem;
-}
-
-a.loginButton {
-  @include button;
+  padding: 8px;
+  border-radius: 4px;
+  @include outline;
 }

@@ -17,29 +17,16 @@ $background: rgba(255, 255, 255, 0.2);
   align-items: center;
 }
 
-@mixin button($big: false) {
-  @include centering;
-  border-radius: 100px;
-  background: var(--primary);
-  color: var(--font-dark);
-  width: fit-content;
-  height: fit-content;
-  outline: none;
-  font-weight: 500;
-  @if $big {
-    font-size: 1.5rem;
-    padding: 16px 24px;
-  } @else {
-    padding: 8px 20px;
-  }
-
-  &:hover {
-    transition: all 0.3s ease-in-out;
-    background: var(--secondary);
-  }
-}
-
 @mixin page {
   @include contentWidth;
   @include fadeIn;
+}
+
+@mixin outline {
+  outline: none;
+  border-radius: 4px;
+
+  &:focus-visible {
+    border: 1px solid var(--primary);
+  }
 }

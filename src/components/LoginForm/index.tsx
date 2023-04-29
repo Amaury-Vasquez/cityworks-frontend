@@ -2,7 +2,7 @@ import { FC } from 'react';
 import styles from '@/styles/components/login.module.scss';
 import { Button, TextInput } from '@/components';
 
-const { loginForm, inputGroup } = styles;
+const { loginForm, inputGroup, loginInfo, registerLink } = styles;
 
 export const LoginForm: FC = () => {
   return (
@@ -23,6 +23,12 @@ export const LoginForm: FC = () => {
         />
         <Button>Iniciar sesión</Button>
       </div>
+      <span className={loginInfo}>
+        ¿No tienes una cuenta? <br />
+        <a className={registerLink} href="/register">
+          Regístrate
+        </a>
+      </span>
     </form>
   );
 };

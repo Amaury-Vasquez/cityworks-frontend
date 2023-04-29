@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Helmet } from 'react-helmet';
-import { Image } from '@/components';
+import { Button, Image } from '@/components';
 import styles from '@/styles/pages/home.module.scss';
 
 const { homeContent, homeTitle, homeText, homeArticle, homeButton, homeImage } =
@@ -20,8 +20,10 @@ const Home: FC = () => {
             CityWorks es un servicio que se encarga de la administración y
             gestión de obras públicas en la república Mexicana.
           </p>
-          <a className={homeButton} href="/login">
-            Inicia sesión
+          <a className={homeButton} href="/login" tabIndex={-1}>
+            <Button large withShadow variant="gray">
+              Iniciar sesión
+            </Button>
           </a>
         </article>
         <div className={homeImage}>
