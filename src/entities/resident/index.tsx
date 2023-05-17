@@ -29,6 +29,7 @@ const Resident: FC = () => {
                 <span id='spaceForm'>
                     <OverallReport />
                 </span>
+                <div></div>
             </main>
         </>
     );
