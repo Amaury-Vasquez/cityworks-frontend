@@ -7,7 +7,8 @@ const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Auth = lazy(() => import('./pages/Auth'));
 const NotFound = lazy(() => import('./pages/404'));
-const Entity = lazy(() => import('./entities/resident/index')); {/**Eliminar linea */}
+const Users = lazy(() => import('./pages/Users')); {/**Eliminar linea */}
+const Guess = lazy(() => import('./pages/Guess')); {/**Eliminar linea */}
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/auth" element={<Auth />} />
-            <Route path='/entity' element={<Entity />} />  {/**Eliminar linea */}
+            <Route path='/users' element={<Users />} />  {/**Eliminar linea */}
+            <Route path='/guess' element={<Guess />} />  {/**Eliminar linea */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

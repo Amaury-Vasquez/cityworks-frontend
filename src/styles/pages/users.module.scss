@@ -1,0 +1,5 @@
+@import '../mixins';
+
+main.userContent {
+    @include centering;
+}

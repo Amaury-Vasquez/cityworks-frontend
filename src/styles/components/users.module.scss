@@ -1,0 +1,68 @@
+@import '../mixins';
+
+main.operationSection, main.userMain {
+    @include centering;
+    margin: 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .operationItem1 {
+        background-color: var(--primary);
+        color: var(--gray);
+        width: 30%;
+        height: fit-content;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 30px;
+        text-align: center;
+
+        button.operationButton {
+            @include shadow;
+    
+            background-color: var(--gray);
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 30px;
+            transition: background-color 0.2s ease-in-out;
+    
+            &:hover {
+                background-color: var(--dark);
+            }
+        }
+    }
+
+    .operationItem2 {
+        background-color: var(--gray);
+        color: var(--primary);
+        width: 30%;
+        height: fit-content;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 30px;
+        text-align: center;
+
+        button.operationButton {
+            @include shadow;
+    
+            background-color: var(--primary);
+            color: var(--gray);
+            padding: 5px 15px;
+            border-radius: 30px;
+            transition: background-color 0.2s ease-in-out;
+    
+            &:hover {
+                background-color: var(--dark);
+            }
+        }
+    }
+}
+
+main.userMain {
+    width: 30%;
+    
+}
+
+main.operationSection {
+    width: 60%;
+    border-left: 2px solid var(--primary);
+}

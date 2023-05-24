@@ -7,13 +7,17 @@ los obtenidos del backend. */
 const status: statusValue = null;
 /* Aquellos objetos con el atributo status
 se cambiarán su valor con respecto al backend*/
-const operations = [{
+const operations = [
+
+// Main options.
+{
     ID: 0,
     name: 'Catalogo de conceptos',
     action: 'Capturar',
     isInteractive: true,
     entity: 'Superintendente',
     colorOption: 'colors1',
+    section: 'main',
 }, {
     ID: 1,
     name: 'Reportes',
@@ -21,6 +25,7 @@ const operations = [{
     isInteractive: true,
     entity: 'Superintendente',
     colorOption: 'colors2',
+    section: 'main',
 }, {
     ID: 2,
     name: 'Próxima entrega',
@@ -29,6 +34,7 @@ const operations = [{
     entity: 'Superintendente',
     status: 'En revisión',
     colorOption: 'colors1',
+    section: 'main',
 }, {
     ID: 3,
     name: 'Estimaciones',
@@ -36,6 +42,7 @@ const operations = [{
     isInteractive: true,
     entity: 'Superintendente',
     colorOption: 'colors2',
+    section: 'main',
 }, {
     ID: 4,
     name: 'Estado de la ultima estimación',
@@ -44,6 +51,7 @@ const operations = [{
     status: 'En revisión',
     entity: 'Superintendente',
     colorOption: 'colors1',
+    section: 'main',
 }, {
     ID: 0,
     name: 'Reportes',
@@ -51,6 +59,7 @@ const operations = [{
     isInteractive: true,
     entity: 'Supervisor',
     colorOption: 'colors1',
+    section: 'main',
 }, {
     ID: 1,
     name: 'Todos los documentos',
@@ -58,6 +67,7 @@ const operations = [{
     isInteractive: true,
     entity: 'Supervisor',
     colorOption: 'colors2',
+    section: 'main',
 }, {
     ID: 2,
     name: 'Próxima entrega',
@@ -66,6 +76,7 @@ const operations = [{
     status: 'En revisión',
     entity: 'Supervisor',
     colorOption: 'colors1',
+    section: 'main',
 }, {
     ID: 3,
     name: 'Incidencias',
@@ -73,6 +84,7 @@ const operations = [{
     isInteractive: true,
     entity: 'Supervisor',
     colorOption: 'colors2',
+    section: 'main',
 }, {
     ID: 4,
     name: 'Estimaciones',
@@ -80,6 +92,7 @@ const operations = [{
     isInteractive: true,
     entity: 'Supervisor',
     colorOption: 'colors1',
+    section: 'main',
 }, {
     ID: 5,
     name: 'Estatus de la ultima estimación',
@@ -88,6 +101,7 @@ const operations = [{
     status: 'En revisión',
     entity: 'Supervisor',
     colorOption: 'colors2',
+    section: 'main',
 }, {
     ID: 0,
     name: 'Estimaciones',
@@ -95,6 +109,7 @@ const operations = [{
     isInteractive: true,
     entity: 'Residente',
     colorOption: 'colors1',
+    section: 'main',
 }, {
     ID: 1,
     name: 'Avance',
@@ -102,6 +117,7 @@ const operations = [{
     isInteractive: true,
     entity: 'Residente',
     colorOption: 'colors2',
+    section: 'main',
 }, {
     ID: 2,
     name: 'Próxima entrega',
@@ -110,6 +126,7 @@ const operations = [{
     status: 'En revisión',
     entity: 'Residente',
     colorOption: 'colors1',
+    section: 'main',
 }, {
     ID: 3,
     name: 'Reporte global',
@@ -117,6 +134,35 @@ const operations = [{
     isInteractive: true,
     entity: 'Residente',
     colorOption: 'colors2',
-},]
+    section: 'main',
+},
+
+// Guess options.
+{
+    ID: 0,
+    name: 'Nueva estimación',
+    action: 'Capturar',
+    isInteractive: true,
+    entity: 'Superintendente',
+    colorOption: 'colors1',
+    section: 'guess',
+}, {
+    ID: 1,
+    name: 'Visualizar estimaciones',
+    action: 'Visitar',
+    isInteractive: true,
+    entity: 'Superintendente',
+    colorOption: 'colors2',
+    section: 'guess',
+}, {
+    ID: 2,
+    name: 'Próxima entrega',
+    action: currently,
+    isInteractive: false,
+    status: 'En revisión',
+    entity: 'Residente',
+    colorOption: 'colors1',
+    section: 'guess',
+}]
 
 export {nameProject, operations};
