@@ -5,28 +5,27 @@ import { OperationsSection } from '@/components/Operations';
 import { UserProfile } from '@/components/UserProfile';
 import styles from '@/styles/pages/users.module.scss';
 
-
-const {userContent} = styles;
+const { userContent } = styles;
 
 const User: FC = () => {
-    return(
-        <>
-            <Helmet>
-                <title>
-                    {nameProject} - Bienvenido, residente
-                </title>
-                <meta
-                    name="description"
-                    content={nameProject + ", página especializada para residentes de obra."}
-                    //{nameProject} + "pagina especializada para residentes de obra."
-                />
-            </Helmet>
-            <main className={userContent}>
-                <UserProfile />
-                <OperationsSection />
-            </main>
-        </>
-    );
-}
+  return (
+    <>
+      <Helmet>
+        <title>{nameProject} - Bienvenido, residente</title>
+        <meta
+          name="description"
+          content={
+            nameProject + ', página especializada para residentes de obra.'
+          }
+          //{nameProject} + "pagina especializada para residentes de obra."
+        />
+      </Helmet>
+      <main className={userContent}>
+        <UserProfile />
+        <OperationsSection />
+      </main>
+    </>
+  );
+};
 
 export default User;

@@ -1,0 +1,31 @@
+@import '../mixins';
+
+main.guessContent {
+  @include centering;
+
+  h1.guessTitle {
+    @include centering;
+    color: var(--primary);
+    text-align: center;
+    margin: 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+main.columnSection {
+  @include centering;
+  margin: 5px;
+  flex-direction: row;
+  border-left: 2px solid var(--primary);
+
+  section.columnTitle {
+    background-color: var(--primary);
+    color: var(--gray);
+    font-size: 12px;
+    height: fit-content;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid var(--white);
+  }
+}

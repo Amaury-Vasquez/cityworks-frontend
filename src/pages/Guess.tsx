@@ -24,7 +24,7 @@ const Guess: FC = () => {
             </Helmet>
             <main className={userContent}>
                 <UserProfile />
-                {guessOperations? <OperationsSection /> : null}
+                <OperationsSection />
             </main> 
         </>
     );

@@ -9,6 +9,7 @@ const Auth = lazy(() => import('./pages/Auth'));
 const NotFound = lazy(() => import('./pages/404'));
 const Users = lazy(() => import('./pages/Users')); {/**Eliminar linea */}
 const Guess = lazy(() => import('./pages/Guess')); {/**Eliminar linea */}
+const CRUD = lazy(() => import('./pages/GuessCRUD')); {/**Eliminar linea */}
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/auth" element={<Auth />} />
             <Route path='/users' element={<Users />} />  {/**Eliminar linea */}
             <Route path='/guess' element={<Guess />} />  {/**Eliminar linea */}
+            <Route path='/crud' element={<CRUD />} />  {/**Eliminar linea */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
