@@ -7,7 +7,7 @@ import styles from '@/styles/pages/users.module.scss';
 
 const { userContent } = styles;
 
-const User: FC = () => {
+const Users: FC = () => {
   return (
     <>
       <Helmet>
@@ -28,4 +28,4 @@ const User: FC = () => {
   );
 };
 
-export default User;
+export default Users;

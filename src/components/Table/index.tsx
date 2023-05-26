@@ -9,9 +9,5 @@ export const Columns: FC = () => {
       <h1 className={columnText}>{column.value}</h1>
     </section>
   ));
-  return (
-    <>
-      <main className={columnSection}>{columnTitles}</main>
-    </>
-  );
+  return <main className={columnSection}>{columnTitles}</main>;
 };

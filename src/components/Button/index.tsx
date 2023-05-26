@@ -28,6 +28,7 @@ export const Button: FC<ButtonProps> = ({
   variant = 'primary',
   large = false,
   withShadow = false,
+  className,
   ...props
 }) => {
   return (
@@ -36,7 +37,8 @@ export const Button: FC<ButtonProps> = ({
         button,
         variants[variant],
         large && largeButton,
-        withShadow && shadow
+        withShadow && shadow,
+        className
       )}
       {...props}
     >
