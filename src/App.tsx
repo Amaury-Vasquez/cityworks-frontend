@@ -11,6 +11,7 @@ const NotFound = lazy(() => import('./pages/404'));
 function App() {
   return (
     <BrowserRouter>
+    {/** me llamo diego */}
       <MainLayout>
         <Suspense fallback={<FallbackScreen />}>
           <Routes>
