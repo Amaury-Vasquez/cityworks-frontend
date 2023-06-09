@@ -1,0 +1,14 @@
+@import '../mixins';
+
+main.estimationsContent {
+  @include centering;
+}
+
+h1.estimationsTitle {
+  @include centering;
+  color: var(--primary);
+  text-align: center;
+  margin: 5px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}

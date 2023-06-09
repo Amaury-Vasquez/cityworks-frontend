@@ -1,24 +1,12 @@
 @import '../mixins';
 
-main.guessContent {
-  @include centering;
-
-  h1.guessTitle {
+div.columnSection {
     @include centering;
-    color: var(--primary);
-    text-align: center;
     margin: 5px;
-    flex-wrap: wrap;
     flex-direction: row;
+    border-left: 2px solid var(--primary);
   }
-}
-
-main.columnSection {
-  @include centering;
-  margin: 5px;
-  flex-direction: row;
-  border-left: 2px solid var(--primary);
-
+  
   section.columnTitle {
     background-color: var(--primary);
     color: var(--gray);
@@ -28,4 +16,3 @@ main.columnSection {
     text-align: center;
     border: 1px solid var(--white);
   }
-}

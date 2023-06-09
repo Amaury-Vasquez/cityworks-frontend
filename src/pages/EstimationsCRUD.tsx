@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Columns } from '@/components/Table';
+import { Columns } from '@/components/Table/Columns';
 import { nameProject } from '@/constants/index.ts';
-import styles from '@/styles/pages/guess.module.scss';
+import styles from '@/styles/pages/estimationscrud.module.scss';
 
-const { guessContent, guessTitle } = styles;
-const GuessCRUD: FC = () => {
+const { estimationsContent, estimationsTitle } = styles;
+const EstimationsCRUD: FC = () => {
   return (
     <>
       <Helmet>
@@ -17,12 +17,12 @@ const GuessCRUD: FC = () => {
           }     
         />
       </Helmet>
-      <main className={guessContent}>
-        <h1 className={guessTitle}>Estimaciones</h1>
+      <main className={estimationsContent}>
+        <h1 className={estimationsTitle}>Estimaciones</h1>
         <Columns />
       </main>
     </>
   );
 };
 
-export default GuessCRUD;
+export default EstimationsCRUD;

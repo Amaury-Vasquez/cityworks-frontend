@@ -10,6 +10,7 @@ se cambiarán su valor con respecto al backend*/
 const operations = [
     // Main options.
     {
+        key: 0,
         ID: 0,
         name: 'Catalogo de conceptos',
         action: 'Capturar',
@@ -18,6 +19,7 @@ const operations = [
         colorOption: 'colors1',
         section: 'main',
     }, {
+        key: 1,
         ID: 1,
         name: 'Reportes',
         action: 'Visitar',
@@ -26,6 +28,7 @@ const operations = [
         colorOption: 'colors2',
         section: 'main',
     }, {
+        key: 2,
         ID: 2,
         name: 'Próxima entrega',
         action: currently,
@@ -35,6 +38,7 @@ const operations = [
         colorOption: 'colors1',
         section: 'main',
     }, {
+        key: 3,
         ID: 3,
         name: 'Estimaciones',
         action: 'Capturar',
@@ -43,6 +47,7 @@ const operations = [
         colorOption: 'colors2',
         section: 'main',
     }, {
+        key: 4,
         ID: 4,
         name: 'Estado de la ultima estimación',
         action: status,
@@ -52,6 +57,7 @@ const operations = [
         colorOption: 'colors1',
         section: 'main',
     }, {
+        key: 5,
         ID: 0,
         name: 'Reportes',
         action: 'Capturar',
@@ -60,6 +66,7 @@ const operations = [
         colorOption: 'colors1',
         section: 'main',
     }, {
+        key: 6,
         ID: 1,
         name: 'Todos los documentos',
         action: 'Visitar',
@@ -68,6 +75,7 @@ const operations = [
         colorOption: 'colors2',
         section: 'main',
     }, {
+        key: 7,
         ID: 2,
         name: 'Próxima entrega',
         action: currently,
@@ -77,6 +85,7 @@ const operations = [
         colorOption: 'colors1',
         section: 'main',
     }, {
+        key: 8,
         ID: 3,
         name: 'Incidencias',
         action: 'Capturar',
@@ -85,6 +94,7 @@ const operations = [
         colorOption: 'colors2',
         section: 'main',
     }, {
+        key: 9,
         ID: 4,
         name: 'Estimaciones',
         action: 'Validar',
@@ -93,6 +103,7 @@ const operations = [
         colorOption: 'colors1',
         section: 'main',
     }, {
+        key: 10,
         ID: 5,
         name: 'Estatus de la ultima estimación',
         action: status,
@@ -102,6 +113,7 @@ const operations = [
         colorOption: 'colors2',
         section: 'main',
     }, {
+        key: 11,
         ID: 0,
         name: 'Estimaciones',
         action: 'Autorizar',
@@ -110,6 +122,7 @@ const operations = [
         colorOption: 'colors1',
         section: 'main',
     }, {
+        key: 12,
         ID: 1,
         name: 'Avance',
         action: 'Visitar',
@@ -118,6 +131,7 @@ const operations = [
         colorOption: 'colors2',
         section: 'main',
     }, {
+        key: 13,
         ID: 2,
         name: 'Próxima entrega',
         action: currently,
@@ -127,6 +141,7 @@ const operations = [
         colorOption: 'colors1',
         section: 'main',
     }, {
+        key: 14,
         ID: 3,
         name: 'Reporte global',
         action: 'Capturar',
@@ -138,6 +153,7 @@ const operations = [
 
     // Guess options.
     {
+        key: 15,
         ID: 0,
         name: 'Nueva estimación',
         action: 'Capturar',
@@ -146,6 +162,7 @@ const operations = [
         colorOption: 'colors1',
         section: 'guess',
     }, {
+        key: 16,
         ID: 1,
         name: 'Visualizar estimaciones',
         action: 'Visitar',
@@ -154,6 +171,7 @@ const operations = [
         colorOption: 'colors2',
         section: 'guess',
     }, {
+        key: 17,
         ID: 2,
         name: 'Próxima entrega',
         action: currently,

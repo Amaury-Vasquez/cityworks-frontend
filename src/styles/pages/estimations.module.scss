@@ -1,0 +1,5 @@
+@import '../mixins';
+
+main.estimationsContent {
+    @include gridTemplate;
+}

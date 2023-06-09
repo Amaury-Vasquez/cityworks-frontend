@@ -1,0 +1,21 @@
+@import '../mixins';
+
+aside.asideUserProfileContent {
+    @include centering;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: flex-start;
+    text-align: center;
+    width: 35%;
+    background-color: blue;
+
+    .asideUserProfileImage {
+        font-size: 10em;
+    }
+
+    h1#asideUserProfileName {
+        color: var(--primary);
+        font-size: 3em;
+    }
+
+}

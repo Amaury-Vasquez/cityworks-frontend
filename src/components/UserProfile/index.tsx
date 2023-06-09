@@ -1,20 +1,29 @@
 import { FC } from 'react';
-import { nameProject } from '@/constants/index.ts';
-import styles from '@/styles/components/users.module.scss';
+import { Link } from 'react-router-dom';
+import { FaUserCircle } from 'react-icons/fa';
+import styles from '@/styles/components/asideuserprofile.module.scss';
+interface AsideUserProfileProps {
+  userName: string;
+}
 
 const {
-    userMain,
-    userName,
-    //userImage,
+  asideUserProfileContent,
+  asideUserProfileName,
+  asideUserProfileImage
 } = styles;
-export const UserProfile: FC = () => {
-    return(
-        <>
-            <main className={userMain}>
-                <h1 id={userName}><strong>ENTIDAD</strong>
-                    {/*Se cambiará 'ENTIDAD' por el nombre de usuario guardado en la sesión.*/}
-                </h1>
-            </main>
-        </>
-    );
-}
+export const AsideUserProfile: FC<AsideUserProfileProps> = ({ userName }) => {
+  return (
+    <aside className={asideUserProfileContent}>
+      <FaUserCircle className={asideUserProfileImage}/>
+      <h1 id={asideUserProfileName}>
+        <strong>{userName}</strong>
+        {/*Se cambiará 'ENTIDAD' por el nombre de usuario guardado en la sesión.*/}
+      </h1>
+      <br />
+      <Link to={'/'}>
+        <FaUserCircle />
+        <p>Ver perfil</p>
+      </Link>
+    </aside>
+  );
+};
