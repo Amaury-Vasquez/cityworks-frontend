@@ -8,9 +8,10 @@ const About = lazy(() => import('./pages/About'));
 const Auth = lazy(() => import('./pages/Auth'));
 const Register = lazy(() => import('./pages/Register'));
 const NotFound = lazy(() => import('./pages/404'));
-const Users = lazy(() => import('./pages/Users')); 
-const Estimations = lazy(() => import('./pages/Estimations')); 
-const CRUD = lazy(() => import('./pages/EstimationsCRUD')); 
+const Users = lazy(() => import('./pages/Users'));
+const Estimations = lazy(() => import('./pages/Estimations'));
+const CRUD = lazy(() => import('./pages/EstimationsCRUD'));
+const Entity = lazy(() => import('./entities/resident/index'));
 
 function App() {
   return (
@@ -21,10 +22,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/auth" element={<Auth />} />
-            <Route path='/users' element={<Users />} />  
-            <Route path='/estimations' element={<Estimations />} />  
-            <Route path='/crud' element={<CRUD />} />  
+            <Route path="/users" element={<Users />} />
+            <Route path="/estimations" element={<Estimations />} />
+            <Route path="/crud" element={<CRUD />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/entity" element={<Entity />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

@@ -1,0 +1,26 @@
+@import '../mixins';
+
+section#entityMain {
+    margin: 2em;
+    text-align: center;
+    @include centering;
+    flex-direction: column;
+    border-bottom: 1px solid var(--secondary);
+
+    h1#entityName {
+        width: 80%;
+        font-size: 4em;
+        color: var(--primary);
+    }
+
+    div#entityActivityList {
+        width: 60%;
+        font-size: 1.2em;
+        color: var(--white);
+        ul li {
+            list-style: none;
+        }
+    }
+
+}
+
