@@ -11,7 +11,7 @@ const NotFound = lazy(() => import('./pages/404'));
 const Users = lazy(() => import('./pages/Users'));
 const Estimations = lazy(() => import('./pages/Estimations'));
 const CRUD = lazy(() => import('./pages/EstimationsCRUD'));
-const Entity = lazy(() => import('./entities/resident/index'));
+const Guess = lazy(() => import('./pages/Guess'));
 
 function App() {
   return (
@@ -26,7 +26,8 @@ function App() {
             <Route path="/estimations" element={<Estimations />} />
             <Route path="/crud" element={<CRUD />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/entity" element={<Entity />} />
+            <Route path="/users" element={<Users />} />
+            <Route path="/guess" element={<Guess />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
