@@ -181,4 +181,67 @@ const operations = [
   },
 ];
 
-export { nameProject };
+const columns = [
+  {
+    ID: 0,
+    value: 'Clave',
+    tableType: 'same', // ['concepts', 'guess']
+  },
+  {
+    ID: 1,
+    value: 'Descripción',
+    tableType: 'same',
+  },
+  {
+    ID: 2,
+    value: 'Unidad',
+    tableType: 'same',
+  },
+  {
+    ID: 3,
+    value: 'Cantidad',
+    tableType: 'concepts', // ['concepts']
+  },
+  {
+    ID: 4,
+    value: 'P.U.',
+    tableType: 'same',
+  },
+  {
+    ID: 5,
+    value: 'Importe',
+    tableType: 'same',
+  },
+  {
+    ID: 6,
+    value: 'Periodo',
+    tableType: 'concepts',
+  },
+  {
+    ID: 7,
+    value: 'Programado',
+    tableType: 'guess', // ['guess']
+  },
+  {
+    ID: 8,
+    value: 'Acumulado',
+    tableType: 'guess',
+  },
+  {
+    ID: 9,
+    value: 'Estimado',
+    tableType: 'guess',
+  },
+  {
+    ID: 10,
+    value: 'Total',
+    tableType: 'guess',
+  },
+  {
+    ID: 11,
+    value: 'Por ejecutar',
+    tableType: 'guess',
+  },
+];
+
+export { nameProject, operations, columns };

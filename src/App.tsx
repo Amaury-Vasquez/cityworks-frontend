@@ -12,6 +12,7 @@ const Users = lazy(() => import('./pages/Users'));
 const Estimations = lazy(() => import('./pages/Estimations'));
 const CRUD = lazy(() => import('./pages/EstimationsCRUD'));
 const Guess = lazy(() => import('./pages/Guess'));
+const CRUD = lazy(() => import('./pages/GuessCRUD'));
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/users" element={<Users />} />
             <Route path="/guess" element={<Guess />} />
+            <Route path="/users" element={<Users />} />
+            <Route path="/guess" element={<Guess />} />
+            <Route path="/crud" element={<CRUD />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
