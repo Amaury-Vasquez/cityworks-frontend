@@ -6,10 +6,11 @@ import { MainLayout } from '@/Layout';
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Auth = lazy(() => import('./pages/Auth'));
+const Register = lazy(() => import('./pages/Register'));
 const NotFound = lazy(() => import('./pages/404'));
-const Users = lazy(() => import('./pages/Users')); {/**Eliminar linea */}
-const Estimations = lazy(() => import('./pages/Estimations')); {/**Eliminar linea */}
-const CRUD = lazy(() => import('./pages/EstimationsCRUD')); {/**Eliminar linea */}
+const Users = lazy(() => import('./pages/Users')); 
+const Estimations = lazy(() => import('./pages/Estimations')); 
+const CRUD = lazy(() => import('./pages/EstimationsCRUD')); 
 
 function App() {
   return (
@@ -20,9 +21,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/auth" element={<Auth />} />
-            <Route path='/users' element={<Users />} />  {/**Eliminar linea */}
-            <Route path='/estimations' element={<Estimations />} />  {/**Eliminar linea */}
-            <Route path='/crud' element={<CRUD />} />  {/**Eliminar linea */}
+            <Route path='/users' element={<Users />} />  
+            <Route path='/estimations' element={<Estimations />} />  
+            <Route path='/crud' element={<CRUD />} />  
+            <Route path="/register" element={<Register />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
